@@ -1,13 +1,25 @@
 body {
     margin: 0;
     font-family: 'Orbitron', sans-serif;
-    background-color: #0d0d0d;
+    background: url('images/fond.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #00fff7;
-    line-height: 1.6;
+    position: relative;
+}
+
+/* Voile sombre pour améliorer la lisibilité */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: -1;
 }
 
 header {
-    background: linear-gradient(90deg, #020024, #090979, #00d4ff);
+    background: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
     padding: 3rem 1rem;
@@ -22,6 +34,9 @@ header {
     gap: 2rem;
     padding: 2rem;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 2rem;
+    border-radius: 15px;
 }
 
 .presentation img {
@@ -53,27 +68,14 @@ header {
 
 .projets {
     padding: 2rem;
-    background-color: #111;
+    margin: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
     text-align: center;
 }
 
-.projets h2 {
-    color: #fff;
-}
-
-.projets ul {
-    list-style: none;
-    padding: 0;
-}
-
-.projets li {
-    padding: 0.8rem;
-    font-size: 1.1rem;
-    color: #00fff7;
-}
-
 footer {
-    background-color: #050505;
+    background-color: rgba(0, 0, 0, 0.9);
     text-align: center;
     padding: 2rem 1rem;
     color: #bbb;
