@@ -24,6 +24,8 @@ header {
     text-align: center;
     padding: 3rem 1rem;
     font-family: 'Press Start 2P', cursive;
+    border-bottom: 3px solid #00fff7;
+    box-shadow: 0 0 20px #00fff7;
 }
 
 .presentation {
@@ -37,6 +39,7 @@ header {
     background-color: rgba(0, 0, 0, 0.6);
     margin: 2rem;
     border-radius: 15px;
+    box-shadow: 0 0 15px #00fff7;
 }
 
 .presentation img {
@@ -72,6 +75,17 @@ header {
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
     text-align: center;
+    box-shadow: 0 0 15px #00fff7;
+}
+
+.projets a {
+    color: #00fff7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.projets a:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -81,6 +95,7 @@ footer {
     color: #bbb;
     font-size: 0.9rem;
     border-top: 2px solid #00fff7;
+    box-shadow: 0 -2px 10px #00fff7;
 }
 
 footer a {
@@ -99,17 +114,21 @@ footer a:hover {
     }
 }
 
+/* --- Compétences --- */
+
 .competences {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 2rem;
     margin: 2rem;
     border-radius: 15px;
+    box-shadow: 0 0 15px #00fff7;
 }
 
 .competences h2, .competences h3 {
     color: #fff;
     text-align: center;
     margin-bottom: 1rem;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .jauge p {
@@ -125,16 +144,22 @@ progress {
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 1rem;
+    background-color: #222;
 }
 
 progress::-webkit-progress-bar {
-    background-color: #333;
+    background-color: #222;
     border-radius: 10px;
 }
 
 progress::-webkit-progress-value {
     background-color: #ff2b2b;
     border-radius: 10px;
-    box-shadow: 0 0 5px #ff2b2b;
+    box-shadow: 0 0 8px #ff2b2b;
 }
 
+progress::-moz-progress-bar {
+    background-color: #ff2b2b;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #ff2b2b;
+}
