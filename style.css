@@ -75,18 +75,55 @@ header {
     margin: 2rem;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
-    text-align: center;
     box-shadow: 0 0 15px #00fff7;
 }
 
-.projets a {
-    color: #00fff7;
-    text-decoration: none;
-    font-weight: bold;
+.projets h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
 }
 
-.projets a:hover {
-    text-decoration: underline;
+.projet {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    background: rgba(0,0,0,0.5);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00fff7;
+}
+
+.projet img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #00fff7;
+}
+
+.projet h3 {
+    color: #00fff7;
+    margin-top: 0;
+}
+
+.projet p {
+    color: #ccc;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .projet {
+        flex-direction: column;
+        text-align: center;
+    }
+    .projet img {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 footer {
