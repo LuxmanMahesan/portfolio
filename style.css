@@ -26,6 +26,7 @@ header {
     font-family: 'Press Start 2P', cursive;
     border-bottom: 3px solid #00fff7;
     box-shadow: 0 0 20px #00fff7;
+    position: relative; /* important pour le menu */
 }
 
 .presentation {
@@ -115,7 +116,6 @@ footer a:hover {
 }
 
 /* --- Compétences --- */
-
 .competences {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 2rem;
@@ -164,3 +164,32 @@ progress::-moz-progress-bar {
     box-shadow: 0 0 8px #00fff7;
 }
 
+/* --- Menu en haut à droite --- */
+html {
+    scroll-behavior: smooth; /* défilement fluide */
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu a {
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.8);
+    color: #00fff7;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 2px solid #00fff7;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 0 8px #00fff7;
+}
+
+.menu a:hover {
+    background: #00fff7;
+    color: black;
+    box-shadow: 0 0 15px #00fff7;
+}
